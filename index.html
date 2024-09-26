@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Profiles</title>
+    <link rel="stylesheet" href="stylee.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Merriweather', serif;
+            background-color: #ffffff;
+        }
+
+        .person {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .container {
+            width: 400px;
+            height: 312px;
+            position: relative;
+            border-radius: 50%;
+            transform: scale(0.48);
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+          
+        }
+
+        .container:hover {
+            transform: scale(0.54);
+        }
+
+        .container-inner {
+            position: relative;
+            top: -200px;
+            transform-origin: 50%;
+            clip-path: path('M 390,400 C 390,504.9341 304.9341,590 200,590 95.065898,590 10,504.9341 10,400 V 10 H 200 390 Z');
+        }
+
+        .circle {
+            position: absolute;
+            top: 210px;
+            left: 10px;
+            width: 380px;
+            height: 380px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .img {
+            position: relative;
+            top: 144px;
+            left: -16px;
+            width: 466px;
+            transform: translateY(20px) scale(1.15);
+            transform-origin: 50% bottom;
+            transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .img:hover {
+            transform: translateY(0) scale(1.2);
+        }
+
+        .divider {
+            background-color: #ca6060;
+            height: 1px;
+            width: 160px;
+            margin-top: 20px;
+        }
+
+        .name {
+            color: #404245;
+            font-size: 36px;
+            font-weight: 900;
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        .title {
+            color: #6e6e6e;
+            font-family: Arial, sans-serif;
+            font-size: 34px;
+            font-style: italic;
+            margin-top: 4px;
+            text-align: center;
+        }
+        .person-abhishek{
+          position: relative;
+          bottom: 40vh;
+
+        }
+        .maincont{
+          display: flex;
+          position: relative;
+          top: 40vh;
+        }
+
+        @media only screen and (max-width: 600px) {
+          .maincont{
+            display: flex;
+            flex-direction: column;
+            
+          }
+          .person-abhishek{
+          position: relative;
+          bottom: 4vh;
+
+        }
+        }
+    </style>
+</head>
+
+<body>
+  <div class="maincont">
+
+    <div class="person-rishab">
+        <div class="container">
+            <div class="container-inner">
+                <img class="circle" src="" alt="Profile Circle" />
+                <img class="img img1" src="image/mishra1.png" alt="Rishav Mishra" />
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="name">Rishav Mishra</div>
+        <div class="title">President</div>
+    </div>
+
+    <div class="person-abhishek">
+        <div class="container">
+            <div class="container-inner">
+                <img class="circle" src="" alt="Profile Circle" />
+                <img class="img img3" src="image/abhi.png" alt="Abhishek Kumar" />
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="name">Abhishek Kumar</div>
+        <div class="title">Founder</div>
+    </div>
+
+    <div class="person">
+        <div class="container">
+            <div class="container-inner">
+                <img class="circle" src="" alt="Profile Circle" />
+                <img class="img img3" src="image/Untitled_design__1___1_-removebg-preview.png" alt="Tejus Gupta" />
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="name">Tejus Gupta</div>
+        <div class="title">Vice President</div>
+    </div>
+  </div>
+</body>
+
+</html>
