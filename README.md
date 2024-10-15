@@ -64,10 +64,5 @@ For more detailed instructions, please refer to the [CONTRIBUTING.md](CONTRIBUTI
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-## Acknowledgments
 
-- [Awesome Readme Template](https://github.com/matiassingers/awesome-readme)
-- [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Shields.io](https://shields.io/)
 
